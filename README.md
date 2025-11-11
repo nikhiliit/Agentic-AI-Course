@@ -36,9 +36,11 @@ This course takes you on a complete journey through Agentic AI development:
   - Context management across sessions
   - Production deployment strategies
 
-## 🚀 Featured Project: Interactive LLM Chat Interface
+## 🚀 Featured Projects
 
-This repository includes a powerful **Interactive LLM Chat Interface** (`1_multiple_llm_interaction.py`) that demonstrates advanced Agentic AI concepts:
+### **1. Interactive LLM Chat Interface** (`1_multiple_llm_interaction.py`)
+
+A powerful interface that demonstrates advanced Agentic AI concepts:
 
 ### **Key Features:**
 - 🤖 **Multi-Provider Support**: Chat with OpenAI GPT, Google Gemini, and local Ollama models
@@ -70,6 +72,36 @@ python 1_multiple_llm_interaction.py
 - `compare` - Compare model responses side-by-side
 - `chain` - Chain multiple models (response → input flow)
 - `history` - View conversation history
+
+### **2. Multi-Model LLM Orchestration System** (`2_multi_model_orchestration.py`)
+
+An advanced orchestration system implementing the **Orchestrator-Worker Workflow** pattern with 4-agent coordination:
+
+#### **Key Features:**
+- 🎭 **4-Agent Workflow**: Question Generator → Answer Providers (2) → Evaluator
+- 🤖 **Multi-Provider Support**: OpenAI, Google Gemini, and Ollama models
+- 🎯 **Manual & Auto Selection**: Choose models per role or auto-select stable ones
+- 🔄 **Robust Error Handling**: Retry logic, fallback models, graceful API failure handling
+- 📊 **Model Stability Testing**: Connection testing with automatic fallback to stable alternatives
+- 🏆 **Intelligent Evaluation**: AI-powered ranking and comparison of responses
+
+#### **How to Use:**
+```bash
+# Run the orchestration system
+python 2_multi_model_orchestration.py
+
+# Commands available:
+# select - Manually choose models for each role
+# auto   - Auto-select stable models (recommended)
+# run    - Execute the orchestration workflow
+# topic  - Run with custom topic for question generation
+```
+
+#### **Workflow:**
+1. **Question Generator** creates challenging questions on AI/ML topics
+2. **Two Answer Providers** respond to the same question
+3. **Evaluator** judges and ranks all responses by accuracy, clarity, and insight
+4. **Results display** with comprehensive evaluation and model performance analysis
 
 ## 📁 Course Structure
 
